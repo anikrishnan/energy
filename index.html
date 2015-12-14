@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Find out how much energy your city or town in Massachusetts consumes annually.">
+    <meta name="author" content="MAPC">
+    <link rel="icon" href="favicon.ico">
+    <title>Energy Data Portal</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--<link href="css/normalize.css" rel="stylesheet"-->
+    <link href="css/portal.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <nav class="navbar navbar-fixed-top theMainOne">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.mapc.org"><img src="images/mapcLogoWhite.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="navLinks" class="nav navbar-nav">
+              
+                <li><a href="#about" data-toggle="modal">About</a></li>
+                <li><a href="#contactModal" data-toggle="modal">Contact</a></li>
+          </ul>
+          <form id="navSearch" class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" placeholder="City or Town" class="form-control searchBox">
+              </div>
+              <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!--Modal for About Page-->
+    <div id="about" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">About this Website</h3>
+          </div>
+          <div class="modal-body">
+            <img id="modalLogo" src="images/mapcLogo.png">
+            <p>The energy.ma data portal was developed by the Metropolitan Area Planning Council (MAPC) as a tool to help communities learn more about their energy consumption across all key sectors, and develop a plan of action to reduce energy consumption.</p>
+            <p>To learn more about this initiative, drop us a note using the 'Contact' button above.</p>
+            <p>To learn more about MAPC, click <a href="http://www.mapc.org">here</a>.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Ok!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal for Contact Form-->
+    <div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">We'd love to hear from you!</h3>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal col-sm-12">
+              <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+              <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+              <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+              <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>energy.ma <small>data portal</small></h1>
+        <h2>Find out how much energy your city or town consumes annually.</h2>
+        <form id="muniSearch" class="form-inline" role="form">
+          
+
+              <!--button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button-->
+        </form>
+        <!--p><a class="btn btn-lg" href="#features" role="button">Learn More</a></p-->
+      </div>
+    </div>
+
+    <div id="features" class="container">
+      <!-- Example row of columns -->
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img class="img" src="images/learn.png" alt="Learn">
+          <h2>1. Learn</h2>
+          <p>Get the big picture on how much energy your community consumes on an annual basis across the key sectors of municipal, residential, commercial, and industrial.</p>
+          <!--p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p-->
+        </div>
+        <div class="col-md-4">
+          <img class="img" src="images/graph.png" alt="Analyze">
+          <h2>2. Analyze</h2>
+          <p>Dive in to granular analyses which is visually presented to show critical statistics like which buildings to pay attention to, or which fuel sources are contributing to a greater carbon footprint.</p>
+          <!--p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p-->
+       </div>
+        <div class="col-md-4">
+          <img class="img" src="images/strategies.png" alt="Act">
+          <h2>3. Act</h2>
+          <p>Take advantage of MAPC's Clean Energy Toolkit to get started on projects and strategies that will help your community reduce its energy consumption and pave the way for cleaner fuel sources.</p>
+          <!--p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p-->
+        </div>
+      </div>
+      <div class="tagLine text-center"><h2>Ready to go?</h2><a class="btn btn-lg" href="profile.html" role="button">Get Started! &raquo;</a></div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; MAPC &amp General Assembly. Made with <span class="glyphicon glyphicon-heart"></span> in Boston.</p>
+        <p>Website design and development by <a href="http://www.linkedin.com/in/anikrishnan">Ani Krishnan</a>.</p>
+         <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- JavaScripts
+    ================================================== -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/portal.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>
