@@ -1,0 +1,89 @@
+/*-----COLOR FAMILY-----*/
+/* Green: rgb(77,182,26); 
+Gold rgb(277,124,26);
+Dark Blue: */
+
+/*-----Fonts Import-----*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700|Roboto+Slab:400,100|Quicksand:400,700,300);
+
+/*-----BASE STYLES------*/
+
+body {
+  padding-top: 50px;
+  font-family: "Quicksand", serif;
+}
+
+/*remove borders and rounded corners from buttons and inputs*/
+nav form, nav input, .btn {
+	border-radius: 0 !important;
+	border: 0;
+	box-shadow: 0px 2px 5px grey;
+}
+
+footer {
+	padding: 15px;
+}
+
+/*-----ADDITIONAL STYLES------*/
+
+/*-----Nav------*/
+
+nav.theMainOne {
+	background-color: orange; 
+	border: 0 !important;
+	box-shadow: 0px 2px 10px grey;
+}
+
+#navLinks>li>a {
+	color: white;
+}
+
+#navLinks>li>a:hover, #navLinks>li>a:focus {
+	background-color: darkblue;
+}
+
+div>a.navbar-brand {
+	padding-top: 0;
+	padding-bottom: 0;
+	vertical-align: center;
+	
+}
+div>a.navbar-brand>img {
+	width: 90px;
+	vertical-align: center;
+}
+
+span.icon-bar {
+	background-color: #222A68;
+
+}
+
+input.searchBox {
+	text-decoration: none;
+}
+
+ul.ui-autocomplete {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    box-shadow:  0px 2px 5px grey;
+}
+
+.ui-menu-item:first-child {
+	padding-top: 20px;
+}
+
+.ui-menu-item:last-child {
+	padding-bottom: 10px;
+}
+
+#modalLogo {
+	height: 100px;
+	position: center;
+	padding-bottom: 15px;
+}
+/*-----ADDITIONAL MEDIA QUERIES-----*/
+
+
+
