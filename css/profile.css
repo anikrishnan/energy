@@ -1,0 +1,122 @@
+@import "main.css";
+/*-----BASE STYLES-----*/
+body {
+	position: relative !important;
+}
+
+div>section {
+	background:;
+}
+
+section h2 {
+	color: #222A68;
+}
+
+section p {
+	font-family: "Roboto Slab";
+	color:;
+}
+
+/*-----ADDITIONAL STYLES-----*/
+
+.jumbotron {
+  min-height: 0px;
+  background: url('../images/Assembly-Row2.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+h1 {
+  color: white !important;
+  -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+
+#chart1 {
+  height: 275px;
+}
+
+table.table {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  width: 100%;
+}
+
+#table1 td:first-child {
+  font-weight: bold !important;
+}
+
+
+/*-----PROFILE COVER MODE SETTINGS-----*/
+div.coverMode {
+  min-height: 100vh; /*vh sets the height of the element to viewport height*/
+  background-position: bottom;
+}
+
+h1.coverMode {
+  font-size: 6em;
+}
+
+/*
+ul.coverMode, form.coverMode {
+  display: none;
+}
+
+ul#navLinks, form#navSearch {
+  -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+*/
+
+/*-----sideNav STYLES-----*/
+
+/* hide sideNav sub menus by default */
+#sideNav.nav .nav {
+	display: none;
+    font-size:12px;
+}
+
+/* show sub menu when parent is active */
+#sideNav.nav>.active>ul {
+	display: block;
+}
+
+.affix-top,.affix{
+	position: static;
+}
+
+@media (min-width: 979px) {
+  #sideNav.affix-top {
+    position: static;
+  	margin-top:30px;
+  	width:228px;
+  }
+  
+  #sideNav.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#sideNav li.active {
+  	border:0 orange solid;
+  	border-right-width:4px;
+}
+
+#sideNav li li.active {
+  	border:0 orange solid;
+  	padding-left: 3px;
+  	border-left-width:2px;
+}
+
+/*-----ADDITIONAL STYLES-----*/
+
+
+/*-----ADDITIONAL MEDIA QUERIES-----*/
+
